@@ -1,0 +1,40 @@
+header {
+    color: rgb(3, 3, 87);
+    background-color: aquamarine;
+    margin: auto;
+}
+.services {
+    background-color: cornflowerblue;
+
+}
+.imagehead {
+    size:0cm
+
+}
+.image{
+    align-items:center;
+    size: 0cm;
+}
+
+h1, h2, h4, 
+services p, 
+.contact-us {
+    text-align: center;
+    margin: 0;
+} 
+h2, h4, 
+.contact-us {
+    margin-top: 1em;
+}
+.working-hours-address,
+.contact-us {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color:white
+}
+footer {
+    font-weight: bold;
+    background-color:darkblue
+    
+}
