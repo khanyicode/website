@@ -1,10 +1,8 @@
 body, html {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif; /* Use the selected Google Font */
 }
-
-
 
 .imagehead h1 {
     color: white;
@@ -59,15 +57,6 @@ body, html {
     display: block;
 }
 
-
-h2 {
-    text-align: center;
-    color: 0000;
-    margin: 100px 200px; /* Fix the missing unit in the margin property */
-    padding: 100px; /* Adjust padding as needed */
-}
-
-
 h3 {
     text-align: center;
     color: #333;
@@ -75,7 +64,7 @@ h3 {
     /* Add any other styles you want for the h3 element */
 }
 
-h3 {
+h3.intro {
     margin: 100px 200px; /* Fix the missing unit in the margin property */
     /* Add any other styles you want for the p element inside the div */
 }
@@ -86,32 +75,82 @@ div h3 {
     background-color: #7899DE; /* Set the background color to light blue */
 }
 
+h4 {
+    padding: 80px;
+    margin-bottom: 20px;
+}
+
 section {
     background-color: #7899de;
-    padding: 300px; /* Adjust padding as needed */
+    padding: 100px; /* Adjust padding as needed */
 }
 
-section h3, section p {
-    color: #fff; /* Set text color to white or any other contrasting color */
+h2 {
+    text-align: center;
+    color: #000; /* Correct the color value to #000 for black */
+    margin: 200px 0; /* Adjust the margin as needed */
+    padding: 3px; /* Adjust padding as needed */
 }
 
-
-.services,
-.box1,
-.box2,
-.box3,
-.box4,
-.box5,
-.box6,
-.box7 {
-    max-width: 400px; /* Adjust the max-width as needed */
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 20px;
-    margin: 20px auto; /* Center each box horizontally */
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 0;
+    max-width: 2000px; /* Adjust the max-width as needed */
+    margin: 200px auto; /* Center the grid horizontally */
 }
 
+.box1, .box2, .box3, .box4, .box5, .box6 {
+    background-size: cover;
+    height: 300px; /* Set a fixed height for better consistency */
+}
+
+.box1::after,
+.box2::after,
+.box3::after,
+.box4::after,
+.box5::after,
+.box6::after {
+    /* Remove or comment out the content property to eliminate the text */
+    /* content: "Your Text Here"; */
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    text-align: center;
+}
+
+/* Example of removing text content from box1 */
+.box1::after {
+    content: none; /* Empty content property to remove the text */
+}
+
+.box1 {
+    background-image: url('cdc-VRpjDw3WqqI-unsplash.jpg');
+}
+
+.box2 {
+    background-image: url('markus-spiske-wL7pwimB78Q-unsplash.jpg');
+}
+
+.box3 {
+    background-image: url('oliver-hale-oTvU7Zmteic-unsplash.jpg');
+}
+
+.box4 {
+    background-image: url('anton-SnKfmC1I9fU-unsplash.jpg');
+}
+
+.box5 {
+    background-image: url('nastuh-abootalebi-eHD8Y1Znfpk-unsplash.jpg');
+}
+
+.box6 {
+    background-image: url('annie-spratt-QckxruozjRg-unsplash.jpg');
+}
 
 .contact-us {
     display: flex;
@@ -122,10 +161,10 @@ section h3, section p {
     background-color: #fff;
     border: 2px solid #7899DE;
     color: #7899DE;
-    padding: 200px;
+    padding: 10px;
     text-decoration: none;
     font-size: 16px;
-    margin: 5px;
+    margin: 50px;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
 }
@@ -134,6 +173,7 @@ section h3, section p {
     background-color: #7899DE;
     color: #fff;
 }
+
 footer {
     display: flex;
     flex-direction: column;
@@ -143,6 +183,7 @@ footer {
     color: #fff;
     padding: 20px;
     text-align: center;
+    box-sizing: border-box; /* Include padding in total width/height */
 }
 
 /* Styles for working hours and address */
@@ -154,4 +195,5 @@ footer {
 .contact-us button {
     margin: 10px;
 }
+
 
