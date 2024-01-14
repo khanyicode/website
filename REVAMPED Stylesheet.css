@@ -1,40 +1,157 @@
-header {
-    color: rgb(3, 3, 87);
-    background-color: aquamarine;
-    margin: auto;
-}
-.services {
-    background-color: cornflowerblue;
-
-}
-.imagehead {
-    size:0cm
-
-}
-.image{
-    align-items:center;
-    size: 0cm;
-}
-
-h1, h2, h4, 
-services p, 
-.contact-us {
-    text-align: center;
+body, html {
     margin: 0;
-} 
-h2, h4, 
-.contact-us {
-    margin-top: 1em;
+    padding: 0;
+    font-family: Arial, sans-serif;
 }
-.working-hours-address,
-.contact-us {
+
+
+
+.imagehead h1 {
+    color: white;
+    font-size: 4em; /* Adjust the size as needed */
+}
+
+.imagehead {
+    background: url('spraying.jpg') center/cover no-repeat; /* Adjust the path to your image */
+    height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    color:white
+    justify-content: center;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white; /* Set background color to white */
+    overflow: hidden;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: black; /* Set font color to black */
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.navbar .dropdown {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.navbar .dropdown a {
+    float: none;
+    display: block;
+    text-align: left;
+}
+
+.navbar:hover .dropdown {
+    display: block;
+}
+
+
+h2 {
+    text-align: center;
+    color: 0000;
+    margin: 100px 200px; /* Fix the missing unit in the margin property */
+    padding: 100px; /* Adjust padding as needed */
+}
+
+
+h3 {
+    text-align: center;
+    color: #333;
+    font-size: 1.5em;
+    /* Add any other styles you want for the h3 element */
+}
+
+h3 {
+    margin: 100px 200px; /* Fix the missing unit in the margin property */
+    /* Add any other styles you want for the p element inside the div */
+}
+
+/* Add spacing and background color for paragraphs in the div */
+div h3 {
+    margin-top: 20px; /* Add spacing before the next paragraph */
+    background-color: #7899DE; /* Set the background color to light blue */
+}
+
+section {
+    background-color: #7899de;
+    padding: 300px; /* Adjust padding as needed */
+}
+
+section h3, section p {
+    color: #fff; /* Set text color to white or any other contrasting color */
+}
+
+
+.services,
+.box1,
+.box2,
+.box3,
+.box4,
+.box5,
+.box6,
+.box7 {
+    max-width: 400px; /* Adjust the max-width as needed */
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px auto; /* Center each box horizontally */
+}
+
+
+.contact-us {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-button {
+    background-color: #fff;
+    border: 2px solid #7899DE;
+    color: #7899DE;
+    padding: 200px;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.contact-button:hover {
+    background-color: #7899DE;
+    color: #fff;
 }
 footer {
-    font-weight: bold;
-    background-color:darkblue
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    background-color: #7899DE;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
 }
+
+/* Styles for working hours and address */
+.working-hours-address {
+    margin-bottom: 20px; /* Add some space below the working hours and address */
+}
+
+/* Styles for contact buttons */
+.contact-us button {
+    margin: 10px;
+}
+
